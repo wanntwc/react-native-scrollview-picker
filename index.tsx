@@ -175,11 +175,11 @@ const ScrollPicker: { <ItemT extends string | number>(props: ScrollPickerProps<I
         return;
       }
       // onValueChange
-      if (props.onValueChange) {
-        const selectedValue = props.dataSource[_selectedIndex];
-        setSelectedIndex(_selectedIndex);
-        props.onValueChange(selectedValue, _selectedIndex);
-      }
+      // if (props.onValueChange) {
+      //   const selectedValue = props.dataSource[_selectedIndex];
+      //   setSelectedIndex(_selectedIndex);
+      //   props.onValueChange(selectedValue, _selectedIndex);
+      // }
     },
     [itemHeight, props, selectedIndex]
   );
